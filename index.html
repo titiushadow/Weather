@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Tiro+Kannada&family=Ubuntu:wght@300&display=swap" rel="stylesheet"
+    />
+    <!-- Font Awsome -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!---->
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <h3>Confira o clima de uma cidade</h3>
+            <div class="form-input-container">
+                <input type="text" placeholder="Digite o nome da cidade" id="city-input">
+                <button id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+        <div id="weather-data">
+            <h2>
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city">Guararapes</span>
+                <img src="https://countryflagsapi.com/png/br" alt="Bandeira do pais"  id="country">
+            </h2>
+            <p id="temperature"><span>38</span>&deg;C</p>
+            <div id="description-container">
+                <p id="description">Nublado</p>
+                <img src="http://openweathermap.org/img/wn/01d.png" alt="Condições do tempo" id="weather-icon">
+            </div>
+            <div id="details-container">
+                <p id="umidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>48%</span>
+                </p>
+                <p id="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>5km</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
